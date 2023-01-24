@@ -1,12 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br
+">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Teste</title>
 </head>
 <body>
-    <h1>Olá, finalmente você conseguiu.</h1>
+    <main>
+        <h1>Login</h1>
+
+        <form class="formulario" action="cadastro.php" method="get" autocomplete="on">
+
+            <div class="nome">
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required>
+            </div>
+
+            <div class="sobrenome">
+                <label for="isobrenome">Sobrenome</label>
+                <input type="text" name="sobrenome" id="isobrenome" required>
+            </div>
+
+            <div class="email">
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required>
+            </div>
+
+            <input class="botao" type="submit" value="Enviar">
+
+        </form>
+    </main>
 </body>
 </html>
